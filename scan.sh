@@ -21,7 +21,7 @@ searchsploit(){
 
 scan_ini
 dif=''
-dif=''
+dif2=''
 
 while true; do
 
