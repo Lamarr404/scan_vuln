@@ -48,10 +48,10 @@ dif2=''
 while true; do
 
 	scan_ini
-	dif=$(wc -l /home/lucho/Documents/Script/Bash/nmap-ini-`date +%Y-%m-%d-%H-%M`.txt | awk '{print $1;}' | head -n 1)
+	dif=$(wc -l $PATH/Documents/Script/Bash/nmap-ini-`date +%Y-%m-%d-%H-%M`.txt | awk '{print $1;}' | head -n 1)
 	scan
 	sleep 5
-	dif2=$(wc -l /home/lucho/Documents/Script/Bash/nmap-`date +%Y-%m-%d-%H-%M`.txt | awk '{print $1;}' | head -n 1)
+	dif2=$(wc -l $PATH/Documents/Script/Bash/nmap-`date +%Y-%m-%d-%H-%M`.txt | awk '{print $1;}' | head -n 1)
 
 if [[ $dif -ge $dif2 ]]; then
 
